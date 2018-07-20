@@ -1,0 +1,18 @@
+<h1><%= @frame.name %></h1>
+    <p><%= @frame.description %></p>
+    <p><%= @frame.price %></p>
+
+    <div class>
+      <form class="" action="<%= @frame.frame_id %>" method="post">
+        <input type="submit" name="" value="Delete Post">
+
+        <input type="hidden" name="_method" value="DELETE">
+      </form>
+
+      <form class="" action="<%= @frame.frame_id %>/edit" method="GET">
+        <input type="submit" name="" value="Edit">
+
+
+      </form>
+
+    </div>

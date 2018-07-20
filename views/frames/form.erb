@@ -1,0 +1,26 @@
+<form class="" action="/<%= @frame.frame_id %>" method="POST">
+<div class="">
+  <label>Name</label><br>
+
+  <input type="text" name="name" placeholder="Enter the name of the frame" value="<%= @frame.name %>">
+</div>
+<div class="">
+
+  <label>Description</label><br>
+  <textarea name="description" placeholder="Enter the description of the frame"><%= @frame.description %></textarea>
+
+
+</div>
+
+<div class="">
+  <label>Price</label><br>
+  <textarea name="price" placeholder="Enter the price of the frame"><%= @frame.price %></textarea><br>
+
+  <input type="submit" name="" value="Save frame">
+</div>
+
+<% if(@frame.frame_id != "") %>
+<input type="hidden" name="_method" value="PUT">
+<% end %>
+
+</form>
