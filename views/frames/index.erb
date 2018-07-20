@@ -1,0 +1,12 @@
+<h1>Welcome to My homepage</h1>
+
+  <% @frames.each do |frame| %>
+
+    <div class="">
+    <h1><a href="/<%= frame.frame_id %>"><%= frame.name %></a></h1>
+
+    <p><%= frame.description %></p>
+    <p><%=frame.price %></p>
+
+  </div>
+  <% end %>
